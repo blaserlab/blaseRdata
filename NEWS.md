@@ -1,3 +1,3 @@
-# blaseRdata 0.0.0.9000-1
+# blaseRdata 0.0.0.9000-2
 
-* Initial version of the data package.
+* Initial versions of the data package.

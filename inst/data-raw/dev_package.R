@@ -10,3 +10,6 @@ use_data_raw()
 
 check()
 document()
+# commit and push
+#install
+renv::install("blaserlab/blaseRdata", library = "/usr/lib/R/site-library")

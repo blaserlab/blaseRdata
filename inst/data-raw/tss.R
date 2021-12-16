@@ -9,14 +9,12 @@ make_promoter_gr <- function(data) {
   res <- prelim
   start(res) <- mcols(res)$tss-200
   end(res) <- mcols(res)$tss+200
-  strand(res) <- "*"
   mcols(res)$gene <- mcols(res)$gene_name
   mcols(res)$type <- NULL
   mcols(res)$gene_name <- NULL
   mcols(res)$label <- NULL
   return(res)
 }
-
 
 
 zfin_promoters <- make_promoter_gr(zfin_granges)
