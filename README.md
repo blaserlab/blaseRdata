@@ -1,25 +1,22 @@
 
 # blaseRdata
 
-<!-- badges: start -->
-<!-- badges: end -->
-
-The goal of blaseRdata is to ...
+This is a companion dataset for the blaseRtools package of functions.
 
 ## Installation
 
 You can install the development version of blaseRdata like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+devtools::install_github("blaserlab/blaseRdata")
 ```
+However, blaseRdata is installed as a dependency of blaseRtools so if you are using it with blaseRtools functions, you don't need to install it separately.
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is an example of how you would use the package.:
 
 ``` r
-library(blaseRdata)
-## basic example code
+blaseRtools::bb_grcz11_ape("prkcda")
 ```
 
