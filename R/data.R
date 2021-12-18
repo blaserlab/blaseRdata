@@ -52,19 +52,17 @@
 #' @details see data-raw/trace_objects.R
 "hg38_granges_reduced"
 
-#' @title Zebrafish Gene Promoters
-#' @description Defined as TSS +/- 200 bp.  TSS identified as the start of each mRNA in zfin_granges according to strand. (start of the GRange for top strand and end of the GRange for bottom strand.)
-#' @source https://zfin.org/downloads/zfin_genes.gff3 release April 2018
+#' @title Zebrafish Gene TSS
+#' @description From TxDb.Drerio.UCSC.danRer11.refGene
 #' @format A GRanges object:
 #' @details see data-raw/tss.R
-"zfin_promoters"
+"dr11_tss"
 
-#' @title Human Gene Promoters
-#' @description Defined as TSS +/- 200 bp.  TSS identified as the start of each mRNA in hg38_granges according to strand. (start of the GRange for top strand and end of the GRange for bottom strand.)
-#' @source http://ftp.ensembl.org/pub/release-104/gff3/homo_sapiens/
+#' @title Human Gene TSS 
+#' @description From TxDb.Hsapiens.UCSC.hg38.knownGene
 #' @format A GRanges object:
 #' @details see data-raw/tss.R
-"hg38_promoters"
+"hg38_tss"
 
 
 #' @title Jaspar 2020 TF Motifs
