@@ -1,0 +1,3 @@
+sample ,date,equipment,targz_path
+chromium_controller,20211226,chromium,X:\Labs\Blaser\single_cell\vignettes\scRNAseq_vignette\chromium_controller\filtered_feature_bc_matrix.tar.gz
+chromium_X,20211226,X,X:\Labs\Blaser\single_cell\vignettes\scRNAseq_vignette\chromium_X\filtered_feature_bc_matrix.tar.gz
