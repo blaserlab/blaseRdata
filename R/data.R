@@ -58,7 +58,7 @@
 #' @details see data-raw/tss.R
 "dr11_tss"
 
-#' @title Human Gene TSS 
+#' @title Human Gene TSS
 #' @description From TxDb.Hsapiens.UCSC.hg38.knownGene
 #' @format A GRanges object:
 #' @details see data-raw/tss.R
@@ -71,3 +71,58 @@
 #' @format A character vector.
 #' @details see data-raw/meme.R
 "meme"
+
+#' @title ScRNA-seq Vignette CDS
+#' @description A small example CDS for the blaseRtools vignette
+#' @source https://www.10xgenomics.com/resources/datasets/500-human-pbm-cs-3-lt-v-3-1-chromium-controller-3-1-low-6-1-0 and https://www.10xgenomics.com/resources/datasets/500-human-pbm-cs-3-lt-v-3-1-chromium-x-3-1-low-6-1-0
+#' @format A cellDataSet object
+#' @details See blaseRtools scRNAseq Vignette
+"vignette_cds"
+
+#' @title Vignette QC Results
+#' @description Standard bb_qc function output
+#' @source vignette_cds
+#' @format a list
+#' @details See blaseRtools scRNAseq Vignette
+"vig_qc_res"
+
+#' @title Genes to Remove from ScRNA-seq Analysis:  Zebrafish
+#' @description A precompiled list of mitochondrial and ribosomal gene names to remove.
+#' @source Ensembl
+#' @format A character vector
+#' @details See data-raw/remove_genes
+"dr11_remove_genes"
+
+
+#' @title Genes to Remove from ScRNA-seq Analysis:  Human
+#' @description A precompiled list of mitochondrial and ribosomal gene names to remove.
+#' @source Ensembl
+#' @format A character vector
+#' @details See data-raw/remove_genes
+"hg38_remove_genes"
+
+#' @title Genes to Remove from ScRNA-seq Analysis:  Mouse
+#' @description A precompiled list of mitochondrial and ribosomal gene names to remove.
+#' @source Ensembl
+#' @format A character vector
+#' @details See data-raw/remove_genes
+"mm39_remove_genes"
+
+#' @title BlaseRtools ScRNA-seq Vignette CDS Top Markers
+#' @description Top Markers for the vignette CDS
+#' @format A data frame with 1100 rows and 11 variables:
+#' \describe{
+#'   \item{\code{gene_id}}{character Ensembl gene identifier}
+#'   \item{\code{gene_short_name}}{character Gene Name}
+#'   \item{\code{cluster_method}}{character Clustering Method}
+#'   \item{\code{cell_group}}{character Cell Cluster or Partition}
+#'   \item{\code{marker_score}}{double Composite score of fraction expressing and level of expression.}
+#'   \item{\code{mean_expression}}{double Mean marker expression}
+#'   \item{\code{fraction_expressing}}{double Fraction expressing}
+#'   \item{\code{specificity}}{double Marker specificity}
+#'   \item{\code{pseudo_R2}}{double Regression pseudo R squared}
+#'   \item{\code{marker_test_p_value}}{double Wald test P value}
+#'   \item{\code{marker_test_q_value}}{double q value}
+#'}
+#' @details See blaseRtools scRNAseq Vignette
+"vignette_top_markers"
