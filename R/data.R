@@ -126,3 +126,9 @@
 #'}
 #' @details See blaseRtools scRNAseq Vignette
 "vignette_top_markers"
+
+#' @title BlaseRtools ScRNA-seq Vignette CDS Pseudobulk Results
+#' @description Pseudobulk header, results and qc plots.
+#' @format A list of pseudobulk results
+#' @details See blaseRtools scRNAseq Vignette
+"vignette_pseudobulk_res"
