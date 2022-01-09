@@ -6,6 +6,6 @@
 
 * changed promoters objects to TSS only.  Use dr11_tss + 200 to get the same thing.  May need to add metadata columns though.
 
-# blaseRdata 0.0.0.9004
+# blaseRdata 0.0.0.9004 - 9005
 
 * Added vignette cds etc and remove genes.
