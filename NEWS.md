@@ -9,3 +9,7 @@
 # blaseRdata 0.0.0.9004 - 9006
 
 * Added vignette cds etc and remove genes.
+
+# blaseRdata 0.0.0.9007
+
+* Added msigdb data.

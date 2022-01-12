@@ -132,3 +132,38 @@
 #' @format A list of pseudobulk results
 #' @details See blaseRtools scRNAseq Vignette
 "vignette_pseudobulk_res"
+
+#' @title Broad Institute MSIGDB Gene Set Metadata
+#' @description Gene set metadata for the whole MSIGDB.  Most gene sets are known by "STANDARD_NAME".  You can filter the gene set list by supplying a named filter list to the bb_extract_msig function.  The name of each list element should be one of the column names in this metadata table and the list element contents should be the values to filter for.  Filtering works in an additive way, meaning if you supply a filter list with two elements it will extract gene sets passing filters 1 AND 2.
+#' @source https://www.gsea-msigdb.org/gsea/msigdb/ accessed January 12 2022.
+#' @format A data frame with 32796 rows and 18 variables:
+#' \describe{
+#'   \item{\code{STANDARD_NAME}}{character }
+#'   \item{\code{SYSTEMATIC_NAME}}{character }
+#'   \item{\code{HISTORICAL_NAME}}{character }
+#'   \item{\code{ORGANISM}}{character }
+#'   \item{\code{PMID}}{character }
+#'   \item{\code{AUTHORS}}{character }
+#'   \item{\code{GEOID}}{character }
+#'   \item{\code{EXACT_SOURCE}}{character }
+#'   \item{\code{GENESET_LISTING_URL}}{character }
+#'   \item{\code{EXTERNAL_DETAILS_URL}}{character }
+#'   \item{\code{CHIP}}{character }
+#'   \item{\code{CATEGORY_CODE}}{character }
+#'   \item{\code{SUB_CATEGORY_CODE}}{character }
+#'   \item{\code{CONTRIBUTOR}}{character }
+#'   \item{\code{CONTRIBUTOR_ORG}}{character }
+#'   \item{\code{DESCRIPTION_BRIEF}}{character }
+#'   \item{\code{DESCRIPTION_FULL}}{character }
+#'   \item{\code{TAGS}}{character }
+#'}
+#' @details Use with bb_extract_msig
+"msigdb_geneset_metadata"
+
+
+#' @title Broad Institute MSIGDB Gene Sets
+#' @description List of MSIGDB gene sets.  Most gene sets are commonly known by "STANDARD_NAME".  This is a unique value and is provided as the name for each of the elements in this list. If you want to select a single gene set by name you can use the usual R syntax for selecting named elements:  msigdb_genesets$<gene set name>.  If you want to select by other metadata features you should use bb_extract_msig.
+#' @source https://www.gsea-msigdb.org/gsea/msigdb/ accessed January 12 2022.
+#' @format A list.
+#' @details Use with bb_extract_msig
+"msigdb_genesets"
