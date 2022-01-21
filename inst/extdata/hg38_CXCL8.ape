@@ -1,0 +1,185 @@
+LOCUS       CXCL8                   3176 bp ds-DNA     linear        21-JAN-2022 
+COMMENT     Sequence is from Homo sapiens, GRCh38.
+COMMENT     Gene models are from ensembl.
+COMMENT     Gene is CXCL8
+COMMENT     Extensions 0 bp left and 0 bp right.
+COMMENT     Final genomic coordinates are:
+COMMENT     chr4 73740541-73743716
+FEATURES             Location/Qualifiers
+
+     gene            1..3176
+                     /locus_tag="CXCL8_gene"
+                     /ApEinfo_fwdcolor="#deebf7"
+                     /ApEinfo_revcolor="#e5f5e0
+
+     CDS             119..182
+                     /locus_tag="CXCL8_CDS"
+                     /ApEinfo_fwdcolor="#deebf7"
+                     /ApEinfo_revcolor="#e5f5e0
+
+     CDS             1002..1137
+                     /locus_tag="CXCL8_CDS"
+                     /ApEinfo_fwdcolor="#deebf7"
+                     /ApEinfo_revcolor="#e5f5e0
+
+     CDS             1409..1496
+                     /locus_tag="CXCL8_CDS"
+                     /ApEinfo_fwdcolor="#deebf7"
+                     /ApEinfo_revcolor="#e5f5e0
+
+     CDS             119..182
+                     /locus_tag="CXCL8_CDS"
+                     /ApEinfo_fwdcolor="#deebf7"
+                     /ApEinfo_revcolor="#e5f5e0
+
+     CDS             1002..1137
+                     /locus_tag="CXCL8_CDS"
+                     /ApEinfo_fwdcolor="#deebf7"
+                     /ApEinfo_revcolor="#e5f5e0
+
+     CDS             1409..1492
+                     /locus_tag="CXCL8_CDS"
+                     /ApEinfo_fwdcolor="#deebf7"
+                     /ApEinfo_revcolor="#e5f5e0
+
+     CDS             1909..1924
+                     /locus_tag="CXCL8_CDS"
+                     /ApEinfo_fwdcolor="#deebf7"
+                     /ApEinfo_revcolor="#e5f5e0
+
+     mRNA            1..1790
+                     /locus_tag="CXCL8_mRNA"
+                     /ApEinfo_fwdcolor="#deebf7"
+                     /ApEinfo_revcolor="#e5f5e0
+
+     five_prime_UTR  1..118
+                     /locus_tag="CXCL8_five_prime_UTR"
+                     /ApEinfo_fwdcolor="#9ecae1"
+                     /ApEinfo_revcolor="#a1d99b
+
+     exon            1..182
+                     /locus_tag="CXCL8_exon_1"
+                     /ApEinfo_fwdcolor="#3182bd"
+                     /ApEinfo_revcolor="#31a354
+
+     exon            1002..1137
+                     /locus_tag="CXCL8_exon_4"
+                     /ApEinfo_fwdcolor="#3182bd"
+                     /ApEinfo_revcolor="#31a354
+
+     exon            1409..1790
+                     /locus_tag="CXCL8_exon_7"
+                     /ApEinfo_fwdcolor="#3182bd"
+                     /ApEinfo_revcolor="#31a354
+
+     three_prime_UTR 1497..1790
+                     /locus_tag="CXCL8_three_prime_UTR"
+                     /ApEinfo_fwdcolor="#9ecae1"
+                     /ApEinfo_revcolor="#a1d99b
+
+     lnc_RNA         29..1446
+                     /locus_tag="CXCL8_lnc_RNA"
+                     /ApEinfo_fwdcolor="#deebf7"
+                     /ApEinfo_revcolor="#e5f5e0
+
+     exon            29..182
+                     /locus_tag="CXCL8_exon_2"
+                     /ApEinfo_fwdcolor="#3182bd"
+                     /ApEinfo_revcolor="#31a354
+
+     exon            1002..1446
+                     /locus_tag="CXCL8_exon_5"
+                     /ApEinfo_fwdcolor="#3182bd"
+                     /ApEinfo_revcolor="#31a354
+
+     mRNA            29..3176
+                     /locus_tag="CXCL8_mRNA"
+                     /ApEinfo_fwdcolor="#deebf7"
+                     /ApEinfo_revcolor="#e5f5e0
+
+     five_prime_UTR  29..118
+                     /locus_tag="CXCL8_five_prime_UTR"
+                     /ApEinfo_fwdcolor="#9ecae1"
+                     /ApEinfo_revcolor="#a1d99b
+
+     exon            29..182
+                     /locus_tag="CXCL8_exon_3"
+                     /ApEinfo_fwdcolor="#3182bd"
+                     /ApEinfo_revcolor="#31a354
+
+     exon            1002..1137
+                     /locus_tag="CXCL8_exon_6"
+                     /ApEinfo_fwdcolor="#3182bd"
+                     /ApEinfo_revcolor="#31a354
+
+     exon            1409..1492
+                     /locus_tag="CXCL8_exon_8"
+                     /ApEinfo_fwdcolor="#3182bd"
+                     /ApEinfo_revcolor="#31a354
+
+     exon            1909..3176
+                     /locus_tag="CXCL8_exon_9"
+                     /ApEinfo_fwdcolor="#3182bd"
+                     /ApEinfo_revcolor="#31a354
+
+     three_prime_UTR 1925..3176
+                     /locus_tag="CXCL8_three_prime_UTR"
+                     /ApEinfo_fwdcolor="#9ecae1"
+                     /ApEinfo_revcolor="#a1d99b
+
+ORIGIN
+        1 AAAAAGCCAC CGGAGCACTC CATAAGGCAC AAACTTTCAG AGACAGCAGA GCACACAAGC
+       61 TTCTAGGACA AGAGCCAGGA AGAAACCACC GGAAGGAACC ATCTCACTGT GTGTAAACAT
+      121 GACTTCCAAG CTGGCCGTGG CTCTCTTGGC AGCCTTCCTG ATTTCTGCAG CTCTGTGTGA
+      181 AGGTAAGCAC ATCTTTCTGA CCTACAGCGT TTTCCTATGT CTAAATGTGA TCCTTAGATA
+      241 GCAAAGCTAT TCTTGATGCT TTGGTAACAA ACATCCTTTT TATTCAGAAA CAGAATATAA
+      301 TCTTAGCAGT CAATTAATGT TAAATTGAAG ATTTAGAAAA AACTATATAT AACACTTAGG
+      361 AAAGTATAAA GTTTGATCAA TATAGATATT CTGCTTTTAT AATTTATACC ATGTAGCATG
+      421 CATATATTTA ACGTAAATAA GTAATTTATA GTATGTCCTA TTGAGAACCA CGGTTACCTA
+      481 TATTATGTAT TAATATTGAG TTGAGCAAGG TAACTCAGAC AATTCCACTC CTTGTAGTAT
+      541 TTCATTGACA AGCCTCAGAT TTGTCATTAA TTCCTGTCTG GTTTAAAGAT ACCCTGATTA
+      601 TAGACCAGGC ATGTATAACT TATTTATATA TTTCTGTTAA TTCTTTCTGA AGGCAATTTC
+      661 TATGCTGGAG AGTCTTAGCT TGCCTACTAT AAATAACACT GTGGTATCAC AGAGGATTAT
+      721 GCAATATTGA CCAGATAAAA ATACCATGAA GATGTTGATA TTGTACAAAA AGAACTCTAA
+      781 CTCTTTATAT AGGAAGTCGT TCAATGTTGT CAGTTATGAC TGTTTTTTAA AACAAAGAAC
+      841 TAACTGAGGT CAAGGGCTAG GAGAATATTC AGGAATGAGT TCACTAGAAA CATGATGCCT
+      901 TCCATAGTCT CCAAATAATC ATATTGGAAT TAGAAAGGAA GTAGCTGGCA GAGCTGTGCC
+      961 TGTTGATAAA ATCAATCCTT AATCACTTTT TCCCCCAACA GGTGCAGTTT TGCCAAGGAG
+     1021 TGCTAAAGAA CTTAGATGTC AGTGCATAAA GACATACTCC AAACCTTTCC ACCCCAAATT
+     1081 TATCAAAGAA CTGAGAGTGA TTGAGAGTGG ACCACACTGC GCCAACACAG AAATTATGTA
+     1141 AGTACTTTAA AAAAGATTAG ATATTTTGTT TTAGCAAACT TAAAATTAAG GAAGGTGGAA
+     1201 ATATTTAGGA AAGTTCCAGG TGTTAGGATT ACAGTAGTAA ATGAAACAAA ACAAAATAAA
+     1261 AATATTTGTC TACATGACAT TTAAATATGG TAGCTTCCAC AACTACTATA AATGTTATTT
+     1321 TGGACTTAGA CTTTATGCCT GACTTAAGGA ATCATGATTT GAATGCAAAA ACTAAATATT
+     1381 AATCTGAACC ATTTCTTTCT TATTTCAGTG TAAAGCTTTC TGATGGAAGA GAGCTCTGTC
+     1441 TGGACCCCAA GGAAAACTGG GTGCAGAGGG TTGTGGAGAA GTTTTTGAAG AGGTAAGTTA
+     1501 TATATTTTTT AATTTAAATT TTTCATTTAT CCTGAGACAT ATAATCCAAA GTCAGCCTAT
+     1561 AAATTTCTTT CTGTTGCTAA AAATCGTCAT TAGGTATCTG CCTTTTTGGT TAAAAAAAAA
+     1621 AGGAATAGCA TCAATAGTGA GTTTGTTGTA CTCATGACCA GAAAGACCAT ACATAGTTTG
+     1681 CCCAGGAAAT TCTGGGTTTA AGCTTGTGTC CTATACTCTT AGTAAAGTTC TTTGTCACTC
+     1741 CCAGTAGTGT CCTATTTTAG ATGATAATTT CTTTGATCTC CCTATTTATA GTTGAGAATA
+     1801 TAGAGCATTT CTAACACATG AATGTCAAAG ACTATATTGA CTTTTCAAGA ACCCTACTTT
+     1861 CCTTCTTATT AAACATAGCT CATCTTTATA TTTTTAATTT TATTTTAGGG CTGAGAATTC
+     1921 ATAAAAAAAT TCATTCTCTG TGGTATCCAA GAATCAGTGA AGATGCCAGT GAAACTTCAA
+     1981 GCAAATCTAC TTCAACACTT CATGTATTGT GTGGGTCTGT TGTAGGGTTG CCAGATGCAA
+     2041 TACAAGATTC CTGGTTAAAT TTGAATTTCA GTAAACAATG AATAGTTTTT CATTGTACCA
+     2101 TGAAATATCC AGAACATACT TATATGTAAA GTATTATTTA TTTGAATCTA CAAAAAACAA
+     2161 CAAATAATTT TTAAATATAA GGATTTTCCT AGATATTGCA CGGGAGAATA TACAAATAGC
+     2221 AAAATTGAGG CCAAGGGCCA AGAGAATATC CGAACTTTAA TTTCAGGAAT TGAATGGGTT
+     2281 TGCTAGAATG TGATATTTGA AGCATCACAT AAAAATGATG GGACAATAAA TTTTGCCATA
+     2341 AAGTCAAATT TAGCTGGAAA TCCTGGATTT TTTTCTGTTA AATCTGGCAA CCCTAGTCTG
+     2401 CTAGCCAGGA TCCACAAGTC CTTGTTCCAC TGTGCCTTGG TTTCTCCTTT ATTTCTAAGT
+     2461 GGAAAAAGTA TTAGCCACCA TCTTACCTCA CAGTGATGTT GTGAGGACAT GTGGAAGCAC
+     2521 TTTAAGTTTT TTCATCATAA CATAAATTAT TTTCAAGTGT AACTTATTAA CCTATTTATT
+     2581 ATTTATGTAT TTATTTAAGC ATCAAATATT TGTGCAAGAA TTTGGAAAAA TAGAAGATGA
+     2641 ATCATTGATT GAATAGTTAT AAAGATGTTA TAGTAAATTT ATTTTATTTT AGATATTAAA
+     2701 TGATGTTTTA TTAGATAAAT TTCAATCAGG GTTTTTAGAT TAAACAAACA AACAATTGGG
+     2761 TACCCAGTTA AATTTTCATT TCAGATAAAC AACAAATAAT TTTTTAGTAT AAGTACATTA
+     2821 TTGTTTATCT GAAATTTTAA TTGAACTAAC AATCCTAGTT TGATACTCCC AGTCTTGTCA
+     2881 TTGCCAGCTG TGTTGGTAGT GCTGTGTTGA ATTACGGAAT AATGAGTTAG AACTATTAAA
+     2941 ACAGCCAAAA CTCCACAGTC AATATTAGTA ATTTCTTGCT GGTTGAAACT TGTTTATTAT
+     3001 GTACAAATAG ATTCTTATAA TATTATTTAA ATGACTGCAT TTTTAAATAC AAGGCTTTAT
+     3061 ATTTTTAACT TTAAGATGTT TTTATGTGCT CTCCAAATTT TTTTTACTGT TTCTGATTGT
+     3121 ATGGAAATAT AAAAGTAAAT ATGAAACATT TAAAATATAA TTTGTTGTCA AAGTAA
+
+//
