@@ -13,4 +13,5 @@ URL: https://github.com/blaserlab/blaseRdata
 BugReports: https://github.com/blaserlab/blaseRdata/issues
 LazyData: true
 Imports: 
-  BSgenome
+  BSgenome,
+  monocle3
