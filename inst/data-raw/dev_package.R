@@ -16,5 +16,3 @@ gert::git_add("*")
 gert::git_commit("version 0.0.0.9009")
 gert::git_push()
 
-# build and insert into repo
-blaseRtemplates::dratify(repo_name = "blaserX", repo_dir = "~/network/X/Labs/Blaser/share/data/R/drat")
