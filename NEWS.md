@@ -17,3 +17,7 @@
 # blaseRdata 0.0.0.9008
 
 * Added example Ape file
+
+# blaseRdata 0.0.9010
+
+* Added example trace objects.

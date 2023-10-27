@@ -167,3 +167,15 @@
 #' @format A list.
 #' @details Use with bb_extract_msig
 "msigdb_genesets"
+
+#' @title Trace Object:  Zebrafish prkcda
+#' @description A Trace Object centered on the zebrafish prkcda gene.  Genome is danRer11.  Single cell ATAC data, includes peaks and links.   Used for Trace object vignettes.  See data-raw/example_trace.R
+#' @source PMID: 37209097 DOI: 10.1016/j.celrep.2023.112528
+"zf_prkcda_trace"
+
+#' @title Trace Object:  Human PRKCD
+#' @description A Trace Object centered on the Human PRKCD gene.  Includes bulk ATAC and peak tracks.  Used for Trace object vignettes.  See data-raw/example_trace.R
+#' @source PMID: 37209097 DOI: 10.1016/j.celrep.2023.112528
+"e4_PRKCD_trace"
+
+
