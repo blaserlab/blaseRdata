@@ -39,15 +39,15 @@
 "hg38_granges"
 
 #' @title Reduced Zebrafish Gene Model
-#' @description Similar to the Zebrafish Gene Model but with different metadata columns and only with 5', CDS and 3' UTR ranges.  Also has principle isoform data.
-#' @source https://zfin.org/downloads/zfin_genes.gff3 release April 2018
+#' @description Similar to the Zebrafish Gene Model but with different metadata columns and only with 5', CDS and 3' UTR ranges.  Also has principle isoform data. Updated Jan 2024.  See data-raw/trace_objects.R
+#' @source https://ftp.ensembl.org/pub/release-111/gff3/danio_rerio/Danio_rerio.GRCz11.111.chr.gff3.gz
 #' @format A GRanges object:
 #' @details see data-raw/trace_objects.R
 "zfin_granges_reduced"
 
 #' @title Reduced Human Gene Model
-#' @description Similar to the Human Gene Model "hg38_granges" but with different metadata columns and only with 5', CDS, and 3' UTR ranges.  Also has principle isoform data.
-#' @source http://ftp.ensembl.org/pub/release-104/gff3/homo_sapiens/
+#' @description Similar to the Human Gene Model "hg38_granges" but with different metadata columns and only with 5', CDS, and 3' UTR ranges.  Also has principle isoform data.  Updated Jan 2024.  See data-raw/trace_objects.R
+#' @source https://ftp.ensembl.org/pub/release-111/gff3/homo_sapiens/Homo_sapiens.GRCh38.111.chr.gff3.gz
 #' @format A GRanges object:
 #' @details see data-raw/trace_objects.R
 "hg38_granges_reduced"

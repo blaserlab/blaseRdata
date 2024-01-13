@@ -21,3 +21,7 @@
 # blaseRdata 0.0.9010
 
 * Added example trace objects.
+
+# blaseRdata 0.0.9012
+
+* updated hg38 and danrer11 reduced

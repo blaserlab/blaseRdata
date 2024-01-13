@@ -1,6 +1,9 @@
 library(tidyverse)
 library(GenomicRanges)
-hg38_gff <- read_delim(file = "~/workspace_pipelines/sc_refdata/ensembl_hg38_20211126/Homo_sapiens.GRCh38.104.chr.gff3.gz",
+library(conflicted)
+conflict_prefer("select", "dplyr")
+conflict_prefer("filter", "dplyr")
+hg38_gff <- read_delim(file = "https://ftp.ensembl.org/pub/release-111/gff3/homo_sapiens/Homo_sapiens.GRCh38.111.chr.gff3.gz",
                        delim = "\t",
                        comment = "#",
                        col_names = c("seqid",
@@ -14,7 +17,7 @@ hg38_gff <- read_delim(file = "~/workspace_pipelines/sc_refdata/ensembl_hg38_202
                                      "attributes"))
 
 
-hg38_megabiglookup <- read_delim(file = "~/workspace_pipelines/sc_refdata/ensembl_hg38_20211126/hg38_megabiglookup.txt", delim = "\t")
+hg38_biomart <- read_delim("/workspace/refdata/biomart/hg38_biomart_20240113.txt", delim = "\t")
 
 hg38_full_model <-
   hg38_gff %>%
@@ -23,13 +26,14 @@ hg38_full_model <-
   select(-attributes) %>%
   mutate(parent_transcript = str_replace(parent_transcript, "Parent=transcript:", "")) %>%
   left_join(
-    hg38_megabiglookup %>% select(
+    hg38_biomart %>% select(
       parent_transcript = `Transcript stable ID`,
       APPRIS = `APPRIS annotation`,
       length = `Transcript length (including UTRs and CDS)`,
       gene_name = `Gene name`
     )
-  ) %>% mutate(APPRIS = factor(
+  ) %>%
+  mutate(APPRIS = factor(
     APPRIS,
     levels = c(
       "principal1",
@@ -52,7 +56,7 @@ hg38_granges_reduced <- hg38_full_model_gr
 save(hg38_granges_reduced, file = "data/hg38_granges_reduced.rda", compress = "gzip")
 tools::checkRdaFiles("data/hg38_granges_reduced.rda")
 
-dr11_gff <- read_delim(file = "~/workspace_pipelines/sc_refdata/zfin_20211111/zfin_genes.gff3",
+dr11_gff <- read_delim(file = "https://ftp.ensembl.org/pub/release-111/gff3/danio_rerio/Danio_rerio.GRCz11.111.chr.gff3.gz",
                        delim = "\t",
                        comment = "#",
                        col_names = c("seqid",
@@ -64,23 +68,23 @@ dr11_gff <- read_delim(file = "~/workspace_pipelines/sc_refdata/zfin_20211111/zf
                                      "strand",
                                      "phase",
                                      "attributes"))
-dr11_megabiglookup <- read_delim("~/workspace_pipelines/sc_refdata/zfin_20211111/dr11_megabiglookup.txt", delim = "\t")
-
+dr11_biomart <- read_delim("/workspace/refdata/biomart/grcz11_biomart_20240113.txt", delim = "\t")
 
 dr11_full_model <-
   dr11_gff %>%
   filter(type %in% c("five_prime_UTR", "CDS", "three_prime_UTR")) %>%
-  mutate(parent_transcript = str_extract(attributes, "Parent=ENSDART[:digit:]*")) %>%
+  mutate(parent_transcript = str_extract_all(attributes, "Parent=transcript:ENSDART[:digit:]*")) %>%
   select(-attributes) %>%
-  mutate(parent_transcript = str_replace(parent_transcript, "Parent=", "")) %>%
+  mutate(parent_transcript = str_replace(parent_transcript, "Parent=transcript:", "")) %>%
   left_join(
-    dr11_megabiglookup %>% select(
+    dr11_biomart %>% select(
       parent_transcript = `Transcript stable ID`,
       APPRIS = `APPRIS annotation`,
       length = `Transcript length (including UTRs and CDS)`,
       gene_name = `Gene name`
     )
-  ) %>% mutate(APPRIS = factor(
+  ) %>%
+  mutate(APPRIS = factor(
     APPRIS,
     levels = c(
       "principal1",
