@@ -31,7 +31,7 @@ gert::git_commit("9012")
 
 # frequently update your working branch from main or master branch
 # this will first update main or master from remote
-blaseRtemplates::git_update_branch()
+blaseRtemplates::git_update_branch(upstream = "master")
 
 # once you are done with your day's work, merge back into main
 blaseRtemplates::git_safe_merge()
