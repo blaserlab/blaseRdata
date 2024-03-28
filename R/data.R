@@ -178,4 +178,12 @@
 #' @source PMID: 37209097 DOI: 10.1016/j.celrep.2023.112528
 "e4_PRKCD_trace"
 
-
+#' @title Human gene name, ensembl id and uniprot lookup table
+#' @description Accessed via biomaRt on March 28 2024.  See data-raw/uniprot.R for more details
+#' @format A data frame with 38353 rows and 3 variables:
+#' \describe{
+#'   \item{\code{ensembl_gene_id}}{character }
+#'   \item{\code{hgnc_symbol}}{character }
+#'   \item{\code{uniprotswissprot}}{character }
+#'}
+"Hs_ens_hgnc_uniprot"

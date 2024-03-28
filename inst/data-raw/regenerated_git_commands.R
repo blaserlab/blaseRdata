@@ -34,14 +34,14 @@ gert::git_commit("9012")
 blaseRtemplates::git_update_branch(upstream = "master")
 
 # once you are done with your day's work, merge back into main
-blaseRtemplates::git_safe_merge()
+blaseRtemplates::git_safe_merge(upstream = "master")
 
 # remember to delete your branch when you are done merging:
 gert::git_branch_delete(branch = "brad_working")
 
 # remember to push your changes to github so we can all get them:
 blaseRtemplates::git_push_all()
-
+blaseRtemplates::install_one_package("blaserlab/blaseRdata")
 
 ###########################################################################
 #                                                                         #

@@ -25,3 +25,7 @@
 # blaseRdata 0.0.9012
 
 * updated hg38 and danrer11 reduced
+
+# blaseRdata 0.0.9013
+
+* added uniprot ensembl hgnc lookup
